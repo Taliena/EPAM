@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+        table:not(.grey){
+            border-collapse:collapse;
+            text-align: center;
+        }
+        .blue td{
+            border:1px solid blue;
+        }
+        .pink td{
+            border:1px solid plum;
+        }
+        .yellow td{
+            border:1px solid yellow;
+        }
+        .black td, .black th{
+            border: 1px solid black;
+        }
+        caption{
+            font-weight:bold;
+        }
+        .grey td, .grey th{
+            border: 1px solid grey;
+        }
+        .decimal-leading-zero{
+            list-style-type: decimal-leading-zero;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="first_image">
+        <table class="blue">
+            <tr>
+                <td>foo</td>
+                <td>bar</td>
+                <td>baz</td>
+            </tr>
+            <tr>
+                <td> 
+                    <table class="yellow">
+                        <tr>
+                            <td>one</td>
+                            <td>two</td>
+                            <td>three</td>
+                        </tr>
+                        <tr>
+                            <td>fore</td>
+                            <td>five</td>
+                            <td>six</td>
+                        </tr>
+                        <tr>
+                            <td>seven</td>
+                            <td>eight</td>
+                            <td>nine</td>
+                        </tr>
+
+                    </table>
+                </td>
+                <td rowspan="2" colspan="2">
+            
+                    <table class="pink">
+                        <tr>
+                            <td>eins</td>
+                            <td>zwei</td>
+                            <td rowspan="2">drei<br/>
+                                sechs
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>vier</td>
+                            <td>funf</td>
+                        </tr>
+                    </table>
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td>abc</td>
+            </tr>
+        </table>
+    </div>
+
+    <table class="black">
+            <caption> Time Table</caption>
+            <tr>
+              <th rowspan="6">Hours</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+            </tr>
+            <tr>
+              <td>Science</td>
+              <td>Maths</td>
+              <td>Science</td>
+              <td>Maths</td>
+              <td>Arts</td>
+            </tr>
+             <tr>
+              <td>Social</td>
+              <td>History</td>
+              <td>English</td>
+              <td>Social</td>
+              <td>Sports</td>
+            </tr>
+            <tr>
+              <td colspan="5"></td>
+            </tr>
+             <tr>
+              <td>Science</td>
+              <td>Maths</td>
+              <td>Science</td>
+              <td>Maths</td>
+              <td rowspan="2" colspan="2">Project</td>
+            </tr>
+             <tr>
+              <td>Social</td>
+              <td>History</td>
+              <td>English</td>
+              <td>Social</td>
+              
+            </tr>
+            
+          </table>
+
+          <form action="mailto:taliena15@gmail.com">
+              <table class="grey">
+                  <tr>
+                      <th>Name</th>
+                      <th>Value</th>
+                  </tr>
+                  <tr>
+                      <td><label for="name">Name</label></td>
+                      <td><input id="name" type="text"></td>
+                  </tr>
+                  <tr>
+                        <td>Sex</td>
+                        <td>
+                            <label><input name="sex" type="radio" checked>Male</label>
+                            <label><input name="sex" type="radio">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eye color</td>
+                        <td>
+                            <select>
+                                <option selected>green</option>
+                                <option>brown</option>
+                                <option>grey</option>
+                                <option>blue</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Check all that apply</td>
+                        <td>
+                            <label><input type="checkbox">Over 6feet tall</label>
+                            <label><input type="checkbox">Over 200pounds</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>
+                                Describe your athletic ability
+                                <input type="text">
+                            </label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button>Enter my information</button>
+    
+                        </td>
+                    </tr>
+              </table>
+
+          </form>
+
+          <table>
+              <tr>
+                    <td>
+                      <h1>Unordered list</h1>
+                      <h5>Disc</h5>
+                      <ul type="disc">
+                          <li>First item</li>
+                          <li>Second item</li>
+                          <li>Third item</li>
+                      </ul>
+
+                      <h5>Square</h5>
+                      <ul type="square">
+                          <li>First item</li>
+                          <li>Second item</li>
+                          <li>Third item</li>
+                      </ul>
+
+                      <h5>Circle</h5>
+                      <ul type="circle">
+                          <li>First item</li>
+                          <li>Second item</li>
+                          <li>Third item</li>
+                      </ul>
+
+                      <h5>None-no bullets</h5>
+                      <ul type="none">
+                          <li>First item</li>
+                          <li>Second item</li>
+                          <li>Third item</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <h1>Ordered list</h1>
+                      <h5>Decimal</h5>
+                      <ol type="1">
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                        </ol>
+  
+                        <h5>Decimals with leading zeros</h5>
+                        <ol class="decimal-leading-zero">
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                        </ol>
+  
+                        <h5>Lowercase ascii letters</h5>
+                        <ol type="a">
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                        </ol>
+  
+                        <h5>Lowercase roman numerals</h5>
+                        <ol type="i">
+                            <li>First item</li>
+                            <li>Second item</li>
+                            <li>Third item</li>
+                        </ol>
+                    </td>
+              </tr>
+
+          </table>
+
+
+</body>
+</html>
