@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    footer{
+        display:flex;
+    }
+    video{
+        width:100%;
+        height:auto;
+    }
+    .main_content{
+        display:flex;
+
+    }
+    article, aside{
+        display:block;
+        width: 20%;
+    }
+    main{
+        width:60%;
+    }
+    h1, h2, h3, h4, h5{
+        text-align: center;
+    }
+    dialog{
+        position:absolute;
+        top:0;
+        left:-50%;
+    }
+
+    </style>
+        <script>
+                window.addEventListener("load", init, false);
+                     
+                     function init() {
+                      
+                         var canvas = document.getElementById("canvas");
+                         var context = canvas.getContext("2d");
+                         //Блок 1-красная заливка
+                         context.beginPath();
+                         context.moveTo(30, 100);
+                         context.bezierCurveTo(100, 150,200,50,270,100);
+                         context.lineTo(270,250);
+                         context.moveTo(30,100);
+                         context.lineTo(30, 250);
+                         context.translate(0, 150);
+                         context.moveTo(30, 100);
+                         context.bezierCurveTo(100, 150,200,50,270,100);
+                         context.lineTo(270,-50);
+                         context.fillStyle="red";
+                         context.translate(0, -150);
+                         context.moveTo(30,100);
+                         context.lineTo(150, 175);
+                         context.lineTo(30,250);
+                         context.moveTo(270,100);
+                         context.lineTo(150, 175);
+                         context.lineTo(270,250);
+                         context.fill();
+                         context.closePath();
+           
+                         //Блок 2 Белый прямоугольник на красной заливке
+                         context.beginPath();
+                         context.moveTo(90, 110);
+                         context.lineTo(210,80);
+                         context.lineTo(210,280);
+                         context.lineTo(90,280);
+                           context.fillStyle="white";
+                           context.shadowOffsetX = 0;
+                           context.shadowOffsetY = 0;
+                           context.shadowBlur = 0;
+                         context.fill();
+                         context.save();
+                         context.closePath();
+                         
+                         
+           
+                         //Блок 3 Тени и контур
+                         context.beginPath();
+                         context.moveTo(30, 100);
+                         context.bezierCurveTo(100, 150,200,50,270,100);
+                         context.lineTo(270,250);
+                         context.moveTo(30,100);
+                         context.lineTo(30, 250);
+                         context.translate(0, 150);
+                         context.moveTo(30, 100);
+                         context.bezierCurveTo(100, 150,200,50,270,100);
+                         context.lineTo(270,-50);
+                           context.shadowColor = "black";
+                           context.shadowOffsetX = 3;
+                           context.shadowOffsetY = 3;
+                           context.shadowBlur = 12;
+                               context.stroke();
+                         context.translate(0, -150);
+                         context.save();
+                         context.closePath();
+           
+                         //Блок 4 Красный лист
+                         context.beginPath();
+                         context.moveTo(150,150);
+                         context.lineTo(120,230);
+                         context.lineTo(150, 214);
+                         context.lineTo(180,215);
+           
+                         context.moveTo(150,204);
+                         context.lineTo(148, 234);
+                         context.lineTo(152, 234);
+                         context.save();
+                         context.fillStyle="red";
+                         context.shadowOffsetX = 0;
+                         context.shadowOffsetY = 0;
+                         context.shadowBlur = 0;
+                         context.fill();
+                         context.closePath();
+           
+                         context.beginPath();
+                         context.moveTo(135,200);
+                         context.lineTo(128,140);
+                         context.lineTo(140,145);
+                         context.lineTo(150,120);
+                         context.lineTo(160,140);
+                         context.lineTo(170,135);
+                         context.lineTo(167,200);
+                         context.save();
+                         context.fill();
+                         context.closePath();
+           
+                         context.beginPath();
+                         context.moveTo(125,220);
+                         context.lineTo(110,210);
+                         context.lineTo(115,205);
+                         context.lineTo(100,185);
+                         context.lineTo(120,190);
+                         context.lineTo(125,180);
+                         context.lineTo(140,190);
+           
+                          context.moveTo(155,215);
+                         context.lineTo(195,195);
+                         context.lineTo(185,190);
+                         context.lineTo(200,175);
+                         context.lineTo(180,175);
+                         context.lineTo(177,160);
+                         context.lineTo(170,170);
+                         context.fill();
+                         
+                         context.closePath();
+           
+                         }
+               </script>
+</head>
+<body>
+    <header>
+    <h1>КОРЖ НАТАЛЬЯ</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#childhood">Детство</a></li>
+            <li><a href="#education">Образование</a></li>
+            <li><a href="#career">Карьера</a></li>
+            <li><a href="#life">Личная жизнь</a></li>
+            <li><a href="#interests">Увлечения</a></li>
+        </ul>
+
+    </nav>
+    <div class="main_content">
+    <article>
+        <h2>Интересные истории обо мне</h2>
+        <details>
+            <summary>Однажды я пошла на курсы</summary>
+            <p>и очень старательно выполняла все задания</p>
+        </details>
+        <wbr>
+        <details>
+            <summary>Однажды я пошла на работу</summary>
+            <p>и ее там работала</p>
+        </details>
+
+    </article>
+    <main>
+        <section id="childhood">
+            <h2>Детство</h2>
+            <p><time>15.04.1991</time>День моего Рождения</p>
+            <figure>
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-iJXixmxwhARqKYXdV_luw--pM4iBVx5AAI9DZL7l3cUUBnJA" alt="child" /></p>
+                <figcaption></figcaption>
+            </figure>
+            <div>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию случайного текста на основе Lorem Ipsum великое множество, однако все они имеют один существенный недостаток: их "рыба текст" подходит лишь для англоязычных ресурсов/проектов. Мы же, фактически, предлагаем Lorem Ipsum на русском языке – вы можете использовать полученный здесь контент абсолютно бесплатно и в любых целях, не запрещенных законодательством. Однако в случае, если сгенерированный здесь текст используется в коммерческом или публичном проекте, ссылка на наш сервис обязательна.</div>
+
+        </section>
+        <section id="education">
+            <h2>Образование</h2>
+            <video controls>
+                <source src="IMG_5081.MOV" />
+                <source src="movie.MOV" />
+                <track kind="subtitles" src="video/jane.en.srt" srclang="en" label="English">
+                <track kind="subtitles" src="video/jane.ua.srt" srclang="uk" label="Український">
+                <track kind="subtitles" src="video/jane.ru.srt" srclang="ru" label="Русский">
+            </video>
+            <div>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию случайного текста на основе Lorem Ipsum великое множество, однако все они имеют один существенный недостаток: их "рыба текст" подходит лишь для англоязычных ресурсов/проектов. Мы же, фактически, предлагаем Lorem Ipsum на русском языке – вы можете использовать полученный здесь контент абсолютно бесплатно и в любых целях, не запрещенных законодательством. Однако в случае, если сгенерированный здесь текст используется в коммерческом или публичном проекте, ссылка на наш сервис обязательна.</div>
+        </section>
+        <section id="career">
+            <h2>Карьера</h2>
+            <picture>
+                <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8FA5PdO06dcR5hxOCcW23oV_lYKenpm3ownsLLX8mfXukA7w" media="(min-width: 600px)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8FA5PdO06dcR5hxOCcW23oV_lYKenpm3ownsLLX8mfXukA7w" alt="MDN">
+            </picture>
+            <div>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию случайного текста на основе Lorem Ipsum великое множество, однако все они имеют один существенный недостаток: их "рыба текст" подходит лишь для англоязычных ресурсов/проектов. Мы же, фактически, предлагаем Lorem Ipsum на русском языке – вы можете использовать полученный здесь контент абсолютно бесплатно и в любых целях, не запрещенных законодательством. Однако в случае, если сгенерированный здесь текст используется в коммерческом или публичном проекте, ссылка на наш сервис обязательна.</div>
+            <p><progress max="100" value="25"></progress>Пока я нахожусь только в начале своего пути.</p>
+            <h4>Таблица моих навыков</h4>
+            <table>
+                <tr>
+                    <th>Навык</th>
+                    <th>Уровень владения от 0 до 10</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </section>
+        <section id="life">
+            <h2>Семья</h2>
+            
+            <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D1%8C%D1%8F"><img src="data:image/jpeg;base64,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"></a>
+
+        </section>
+        <section id="interests">
+            <h2>Хобби</h2>
+            <audio controls>
+                <source src="song.mp3">
+            </audio>
+            <div>Прародителем текста-рыбы является известный "Lorem Ipsum" – латинский текст, ноги которого растут аж из 45 года до нашей эры. Сервисов по созданию случайного текста на основе Lorem Ipsum великое множество, однако все они имеют один существенный недостаток: их "рыба текст" подходит лишь для англоязычных ресурсов/проектов. Мы же, фактически, предлагаем Lorem Ipsum на русском языке – вы можете использовать полученный здесь контент абсолютно бесплатно и в любых целях, не запрещенных законодательством. Однако в случае, если сгенерированный здесь текст используется в коммерческом или публичном проекте, ссылка на наш сервис обязательна.</div>
+
+        </section>
+    </main>
+    <aside>
+        
+        <div class="some_ad">
+            <h2>Реклама чего-то невероятного</h2>
+            <mark>Это изменит Вашу жизнь</mark>
+            <p><meter value="100" max="100"></meter>Уровень счастья после прочтения этой статьи</p>
+            <form action="mailto:taliena15@gmail.com">
+                <p><label for="name">имя</label>
+                <input id="name" type="text"></p>
+                <p><label for="name">телефон</label>
+                <input id="name" type="number"></p>
+                <button>Заказать сейчас</button>
+            </form>
+            <p>Узнать стоимость</p>
+            <form action="mailto:taliena15@gmail.com" oninput="result.value=(q.value*27).toFixed(2)">
+                <p>Введите Количество: 
+                <input type="number" name="q" autofocus></p>
+                <p>итого: <output name="result">0</output></p>
+            </form>
+            </form>
+        </div>
+        <bdi>
+            <template>
+                <h6></h6>
+                <mark></mark>
+                <p></p>
+            </template>
+        </bdi>
+        <dialog open>
+                <p>Greetings, one and all!</p>
+        </dialog>
+
+    </aside>
+    </div>
+    <footer>
+            <div><canvas id="canvas" height="300" width="300"></canvas></div>
+            <div>
+                <form action="mailto:taliena15@gmail.com">
+                    <p><label for="name">имя</label>
+                    <input id="name" type="text"></p>
+                    <p><label for="name">телефон</label>
+                    <input id="name" type="number"></p>
+                    <button>ПЕРЕЗВОНИТЕ МНЕ</button>
+                </form>
+            </div>
+    </footer>
+
+
+    
+</body>
+</html>
