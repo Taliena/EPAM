@@ -1,0 +1,165 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+a{
+	color:black;
+	font-size:16px;
+}
+a:hover{
+	font-size:18px;
+	color:red;
+}
+.container{
+	max-width:960px;
+	margin: 0 auto;
+	align-items: center;
+
+	justify-content: center;
+
+
+}
+.logo_container{
+	height:auto;
+	color: black;
+	font-size: 18px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo{
+	width:30%;
+}
+.logo img{
+	width:100px;
+	object-fit:contain;
+}
+.nav_menu{
+	background-color:grey;
+	width:100%;
+
+}
+.navigation{
+	display:flex;
+	justify-content: space-between;
+	color:white;
+	align-items: center;
+	height:80px;
+}
+.navigation>li{
+	display:block;
+	list-style: none;
+
+}
+.navigation>li>a{
+	padding: 0 20px;
+}
+.navigation>li:hover .section-1>.sub_menu{
+	display:block;
+	flex-direction:column;
+}
+.sub_menu, .sub_sub_menu{
+	display:none;
+	list-style: none;
+	padding-left:0;
+}
+.sub_menu li {
+	text-align: center;
+	
+}
+.section{
+	position:relative;
+}
+.section:hover .sub_menu{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	width:auto;
+	position:absolute;
+	background-color: #d6cece;
+	width:100%;
+}
+.sub_menu>li>a{
+	width:100%;
+}
+
+.sub_sub_menu{
+	display:none;
+}
+.sub_menu_section:hover .sub_sub_menu{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	position:absolute;
+	left:100%;
+	top:0;
+	background-color: #d6cece;
+	width:120px;
+}
+
+.banner{
+	width:100%;
+	text-align: center;
+}
+.banner img{
+	width:100%;
+	object-fit: cover;
+	height:40vh;
+}
+
+#img_1, #img_2, #img_3, #img_4{
+	display:none;
+}
+.dots>a{
+	display: inline-block;
+	margin:5px;
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color: #d6cece;
+}
+.dots>a:hover{
+	background-color:grey;
+	cursor:pointer;
+}
+.dots>.dot1{
+	background-color:grey;
+}
+
+.dots>.dot1:active .dots>#img_1{
+	display:block;}
+
+	.dots>a:hover #img_1{
+		display:block;
+	}
+.our_pluses{
+	display:flex;
+	justify-content: space-between;
+}
+
+.card{
+	height:150px;
+	width:30%;
+	margin:10px;
+	background:red;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+
+.card:after{
+	height:100%;
+	width:100%;
+	background:green;
+	opacity:.5;
+	content:"";
+	position:absolute;
+	transition:all 2s;
+}
+.card:hover:after{
+	width:0%;
+	background-color: transparent;
+    cursor: pointer;
+
+
+}
