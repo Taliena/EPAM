@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
@@ -25,16 +26,19 @@
     </div>
   </div>
   <nav class="nav_menu">
+    <label class="label_checkbox" for="nav_trigger"><i class="fas fa-grip-lines"></i></label>
+    <input type="checkbox" id="nav_trigger" class="nav_trigger" />
+    
     <ul class="navigation container">
       <li class="section">
         <a href="#section-1"> Section 1
-          <ul class="sub_menu">
+          <ul class="sub_menu" id="sub_menu">
             <li class="sub_menu_section">
               <a href="#section1-1">Section 1.1
                 <ul class="sub_sub_menu">
                   <li><a href="#">Section 1.1.1</a></li>
-                  <li><a href="#">Section 1.1.1</a></li>
-                  <li><a href="#">Section 1.1.1</a></li>
+                  <li><a href="#">Section 1.1.2</a></li>
+                  <li><a href="#">Section 1.1.3</a></li>
                 </ul>
 
               </a>
@@ -113,33 +117,145 @@
         </a>
       </li>
     </ul>
-  </nav>
+
+    
+    </nav>
 
 </header>
 <main class="container">
   <div class="banner" id="section-1">
     <h1>Section 1</h1>
-    <img id="img_1" src="https://usa-info.com.ua/images/disneylend-anahaim-1.jpg"/>
-    <img id="img_2" src="https://incomartour.com.ua/mediafiles/images/places/20170608161110/thumbs/disneylandparis2-tmb-1200x628xfill.jpg"/>
-    <img id="img_3" src="https://avatars.mds.yandex.net/get-pdb/236760/7bfb284b-24a3-458f-8081-2c2e24d9a5b4/orig"/>
-    <img id="img_4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXFcp5lfMyTYLno4cDoAT3OuuWf9YPI8Ef3giavjUJgob8gmJOA"/>
-    <p class="dots"><a href="#" class="dot1"></a><a href="#" class="dot2"></a><a href="#" class="dot3"></a><a href="#" class="dot4"></a></p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+   
+    <input type="radio" id="radio1" class="radio" name="img" checked/>
+    <img id="img_1" class="img" src="https://usa-info.com.ua/images/disneylend-anahaim-1.jpg"/>
+
+    <input type="radio" id="radio2" class="radio" name="img" />
+    <img id="img_2" class="img" src="https://incomartour.com.ua/mediafiles/images/places/20170608161110/thumbs/disneylandparis2-tmb-1200x628xfill.jpg"/>
+    
+ 
+    <input type="radio" id="radio3" class="radio" name="img" />
+    <img id="img_3" class="img"  src="https://avatars.mds.yandex.net/get-pdb/236760/7bfb284b-24a3-458f-8081-2c2e24d9a5b4/orig"/>
+    
+  
+    <input type="radio" id="radio4" class="radio" name="img" />
+    <img id="img_4" class="img"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXFcp5lfMyTYLno4cDoAT3OuuWf9YPI8Ef3giavjUJgob8gmJOA"/>
+
+    <p> <label class="label_radio" for="radio1" class="dot"><i class="fas fa-circle"></i></label>
+ <label class="label_radio" for="radio2" class="dot"><i class="fas fa-circle"></i></label>
+  <label class="label_radio" for="radio3" class="dot"><i class="fas fa-circle"></i></label>
+   <label class="label_radio" for="radio4" class="dot"><i class="fas fa-circle"></i></label>
+    </p>
+    
+
+    <p class="slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
   </div>
-  <div  class="about_us" id="section-2">
+   
+
+   <h1>Section 2</h1>
+  <div  class="team" id="section-2">
+   
+    <div class="worker">
+      <p><img src="https://topspiski.com/wp-content/uploads/2018/02/lois-griffin-700x583.jpg" alt="worker1"></p>
+      <h4>Name</h4>
+      <p>Position</p>
+      <a href="tel:23333"><i class="fas fa-phone"></i>5665</a>
+      
+    </div>
+    <div class="worker">
+      <p><img src="https://topspiski.com/wp-content/uploads/2018/02/lois-griffin-700x583.jpg" alt="worker1"></p>
+      <h4>Name</h4>
+      <p>Position</p>
+      <a href="tel:23333"><i class="fas fa-phone"></i>5665</a>
+      
+    </div>
+    <div class="worker">
+      <p><img src="https://topspiski.com/wp-content/uploads/2018/02/lois-griffin-700x583.jpg" alt="worker1"></p>
+      <h4>Name</h4>
+      <p>Position</p>
+      <a href="tel:23333"><i class="fas fa-phone"></i>5665</a>
+      
+    </div>
+    <div class="worker">
+      <p><img src="https://topspiski.com/wp-content/uploads/2018/02/lois-griffin-700x583.jpg" alt="worker1"></p>
+      <h4>Name</h4>
+      <p>Position</p>
+      <a href="tel:23333"><i class="fas fa-phone"></i>5665</a>
+      
+    </div>
   </div>
+  <h1>Section 3</h1>
   <div id="section-3" class="our_pluses">
-    <div class="html card"></div>
-    <div class="css card"></div>
-    <div class="js card"></div>
-    <div class="php card"></div>
-    <div class="figma card"></div>
-    <div class="wp card"></div>
+    
+    <div class="html card">
+      <div class="card_description">
+      <h4>HTML5</h4>
+      <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+    </div>
+    </div>
+      
+    <div class="css card">
+      <div class="card_description">
+      <h4>CSS3</h4>
+      <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+    </div>
+    </div>
+    <div class="js card">
+      <div class="card_description">
+      <h4>JS</h4>
+      <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+    </div>
+    </div>
+    <div class="php card">
+      <div class="card_description">
+        <h4>PHP</h4>
+        <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+      </div>
+    </div>
+    <div class="figma card">
+      <div class="card_description">
+      <h4>Figma</h4>
+      <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+    </div>
+    </div>
+    <div class="wp card">
+      <div class="card_description">
+      <h4>WP</h4>
+      <p>Lorem Ipsum начал как омлет, бессмысленные Латинской происходит от 1-го века до н.э. текст Цицерона De Finibus Bonorum et Malorum.</p>
+    </div>
+    </div>
   </div>
+<h1>Section 4</h1>
   <div id="section-4" class="contact">
+
+    <p><a href="tel:+380951328534">+38(095)132-85-34</a></p>
+    <p><a href="https://www.facebook.com/" target="blanc"><i class="fab fa-facebook"></i>Facebook</a></p>
+    <p><a href="https://www.instagram.com/" target="blanc"><i class="fab fa-instagram"></i>Instagram</a></p>
+    <p><a href="https://www.twitter.com/" target="blanc"><i class="fab fa-twitter"></i>Twitter</a></p>
+    <p><i class="fas fa-clock"></i>Working hours: 8:00-22:00</p>
+    <p>Adress:Kiev, Kombinatnaya Street 25A</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.934021613522!2d30.583094415411484!3d50.460953294489485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfdcfee6d585%3A0xcde808aa6c82cac1!2z0YPQuy4g0JrQvtC80LHQuNC90LDRgtC90LDRjywgMjUsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1560029693245!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
   </div>
 </main>
-<footer class="container">
+<footer>
+  <div class="container footer">
+    <div class="adress">
+      <p>Adress:Kiev, Kombinatnaya Street 25A</p>
+      
+    </div>
+    <div class="phones_socials">
+      <p><a href="tel:+380951328534"><i class="fas fa-phone"></i> +38(095)132-85-34</a></p>
+    <p><a href="https://www.facebook.com/" target="blanc"><i class="fab fa-facebook"></i>Facebook</a></p>
+    <p><a href="https://www.instagram.com/" target="blanc"><i class="fab fa-instagram"></i>Instagram</a></p>
+    <p><a href="https://www.twitter.com/" target="blanc"><i class="fab fa-twitter"></i>Twitter</a></p>
+      
+    </div>
+    </div>
+    <p class="copyrights">©Все права защищены 2019</p>
+  </div>
+
 </footer>
 </body>
 </html>
