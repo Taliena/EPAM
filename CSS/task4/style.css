@@ -134,8 +134,14 @@ footer{
 @media only screen and (max-width: 768px){
 	article::after{
 		
-		opacity: 0;
+		display:none;
 	}
+	article section{
+		left:20px;
+	}
+	article section:nth-child(3){
+	left:20px;
+}
 
 
 }
